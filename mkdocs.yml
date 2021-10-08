@@ -1,0 +1,19 @@
+site_name: winter
+site_description: Winter is a caching library for python, leveraging fast on-disk cache and various eviction policies
+site_author: Daniil Larionov
+
+repo_url: https://github.com/rexhaif/winter
+edit_uri: https://github.com/rexhaif/winter/edit/main/docs
+
+theme: readthedocs
+
+markdown_extensions:
+  - codehilite
+
+nav:
+  - Home: index.md
+  - Advanced: advanced.md
+  - About:
+    - Release Notes: about/changelog.md
+    - Contributing: about/contributing.md
+    - License: about/license.md

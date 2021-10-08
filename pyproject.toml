@@ -1,0 +1,85 @@
+[tool.poetry]
+
+name = "winter"
+version = "0.0"
+description = "Winter is a caching library for python, leveraging fast on-disk cache and various eviction policies"
+
+license = "MIT"
+
+authors = ["Daniil Larionov <rexhaif.io@gmail.com>"]
+
+readme = "README.md"
+
+homepage = "https://pypi.org/project/winter"
+documentation = "https://winter.readthedocs.io"
+repository = "https://github.com/rexhaif/winter"
+
+keywords = [
+]
+classifiers = [
+    # TODO: update this list to match your application: https://pypi.org/pypi?%3Aaction=list_classifiers
+    "Development Status :: 1 - Planning",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+]
+
+[tool.poetry.dependencies]
+
+python = "^3.7"
+
+# TODO: Remove these and add your library's requirements
+click = "^7.0"
+minilog = "^2.0"
+
+[tool.poetry.dev-dependencies]
+
+# Formatters
+black = "=21.8b0"
+isort = "=5.9.3"
+
+# Linters
+mypy = "~0.812"
+pydocstyle = "^6.1"
+pylint = "~2.6"
+
+# Testing
+pytest = "^6.2"
+pytest-describe = "^2.0"
+pytest-expecter = "^2.1"
+pytest-random = "*"
+pytest-cov = "^2.12"
+freezegun = "*"
+
+# Reports
+coveragespace = "^4.0"
+
+# Documentation
+mkdocs = "~1.0"
+pygments = "^2.5.2"
+
+# Tooling
+pyinstaller = "*"
+sniffer = "*"
+MacFSEvents = { version = "*", platform = "darwin" }
+pync = { version = "*", platform = "darwin" }
+ipython = "^7.12.0"
+
+[tool.poetry.scripts]
+
+winter = "winter.cli:main"
+
+[tool.black]
+
+quiet = true
+
+[tool.isort]
+
+profile = "black"
+
+[build-system]
+
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
